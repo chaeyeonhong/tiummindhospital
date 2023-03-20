@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none; color: #333;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'NanumSquareRound';
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
+    min-width: 1320px;
+}
+/* 헤더 */
+#header{
+    background-color: white;
+}
+#header_inner{
+    width:1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+ justify-content: space-between;
+ padding: 40px 0;
+}
+#header_inner img{display: block;
+}
+.nav{
+        display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+.nav> li> a{
+    display: block;
+    color: #009c93;
+    padding: 0 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav> li> a:hover{
+    color: #00cdae;
+}
+/* 서브메뉴 꾸미기*/
+.sub{width: 100%; padding-top: 15px;}
+.sub li a{
+    
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: #a3ded6;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.sub li:hover a{background-color: #009c93;}
+
+/* 포지션 */
+.nav li {position: relative;}
+.sub{position: absolute;}
+/* 호버 */
+.sub{display: none;}
+.nav li:hover .sub{display: block;}
+/* 병원소개 배너 */
+#sub_banner1 img{
+    width: 100%;
+}
+/* 인사말 | 원장소개 */
+.sub01{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+.sub_menu{
+    width: 1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_menu a{
+    padding: 20px 0;
+    display: block;
+    font-weight: 400;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 23px;
+    color: #686868;
+}
+.sub_menu li:hover a{
+    color: #fd8484;
+}
+.center{
+    margin: 0 30px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 23px;
+    font-weight: 400;
+color: #ccc;
+}
+/* 원장소개 */
+#info_dr{
+width: 1320px;
+margin: 100px auto;    
+}
+.box_info_dr{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+justify-content: center;
+}
+h1{
+    font-family: 'NanumSquare';
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #373737;
+    padding-bottom: 100px;
+    text-align: center;
+}
+.dr_img{
+    margin-right: 100px;
+}
+
+.dr_img p{
+font-size: 36px;
+font-family: 'NanumSquareNeo-Variable';
+text-align: center;
+padding-top: 50px;
+}
+
+.dr_img .small{
+    font-size: 18px;
+}
+
+.dr_text{
+font-family: 'NanumSquareNeo-Variable';
+font-size: 18px;
+line-height: 36px;
+color: #333333;
+}
+.dr_text1,.dr_text2{
+    padding-bottom: 30px;
+}
+
+.rectangle{
+    display: inline-block;
+    color: #fff;
+    background-color: #7cb5a3;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* 진료안내 오시는길 */
+#sub_banner2{
+    width: 100%;
+}
+#sub_banner2 ul{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+#sub_banner2 li{
+    width: 50%;
+    height: 100%;
+
+}
+
+.noscroll{
+    width: 100%;
+}
+
+/* 푸터 */
+footer{
+    background-color: #85cdcf;
+
+}
+.footer_inner{
+    width: 1320px;
+    margin: auto;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer_logo{display: block;
+margin-top: 120px;}
+
+.tium_info{
+    width: 600px;
+    height: 300px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.tium_info ul li{
+    color: white;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.tium_info ul:nth-child(1),.box3 ul:nth-child(3) {
+  margin-right: 50px;
+}
+.tium_info ul:nth-child(1){
+    margin-bottom: 20px;
+}
+
+/* 퀵메뉴 */
+.fixed{ 
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 10;
+}
+.fixed a, img{ display: block;}
+
+.bgcolor{
+    display: block;
+    background-color: rgb(255, 255, 255);}
+
+.fixed a:hover{
+    filter: saturate(250%);
+}

@@ -1,0 +1,408 @@
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HallymGothic-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2204@1.0/HallymGothic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareNeo-Variable';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none; color: #333;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: 'NanumSquareRound';
+    font-size: 15px;
+    line-height: 22px;
+    color: #333;
+    min-width: 1320px;
+}
+/* 헤더 */
+#header{
+    background-color: white;
+}
+#header_inner{
+    width:1320px;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+ justify-content: space-between;
+ padding: 40px 0;
+}
+#header_inner img{display: block;
+}
+.nav{
+        display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+}
+.nav> li> a{
+    display: block;
+    color: #009c93;
+    padding: 0 40px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.nav> li> a:hover{
+    color: #00cdae;
+}
+/* 서브메뉴 꾸미기*/
+.sub{width: 100%; padding-top: 15px;}
+.sub li a{
+    
+    display: block;
+    color: white;
+    text-align: center;
+    background-color: #a3ded6;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.sub li:hover a{background-color: #009c93;}
+
+/* 포지션 */
+.nav li {position: relative;}
+.sub{position: absolute;}
+/* 호버 */
+.sub{display: none;}
+.nav li:hover .sub{display: block;}
+
+
+/* 메인배너 */
+#main_banner img{
+width: 100%;
+}
+/* 퀵메뉴 */
+.fixed{
+   
+    position: fixed;
+    right: 5%;
+    top: 5%;
+}
+.fixed a, img{ display: block;}
+/* 진료과목 */
+#subject{
+    width: 1320px;
+    margin: 50px auto 20px;
+    padding: 30px 0;
+}
+h1{
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 50px;
+    font-weight:bold;
+    color: #4b4b4b;
+    text-align: center;
+padding-bottom: 80px;    
+}
+#box{
+    width: 1100px;
+    margin: 50px auto;
+    box-sizing: border-box
+}
+.disorder{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.disorder li{padding: 0 70px;}
+.disorder li:nth-child(6){margin-left: 15px;}
+
+.disorder li a{
+display: block;
+transition: all 1s;
+
+}
+.disorder li a:hover{
+    transform: rotate(20deg);
+    filter: saturate(200%);
+}
+
+
+.box_text{
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 30px;
+      color: #4b4b4b;
+    font-weight: 700;
+    text-align: center;
+}
+/* 클리닉 */
+#clinic{
+    width: 1320px;
+    margin: 10px auto;
+}
+.cl{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around
+
+}
+.adult_clinic{
+width: 601px;
+height: 448px;
+box-sizing: border-box;
+padding: 80px 0 40px 50px;   
+}
+.kids_clinic{
+    width: 601px;
+    height: 448px;   
+    box-sizing: border-box; 
+    padding: 80px 0 40px 50px;
+}
+
+.adult_clinic{
+    background:url(../images/adult_bg.png)
+}
+.kids_clinic{
+    background: url(../images/kids_bg.png);
+}
+.adult_clinic p, .kids_clinic p{
+    padding-bottom: 20px;
+      font-family: 'NanumSquareNeo-Variable';
+      color: #777878;
+}
+
+
+.adult{
+  font-family: 'NanumSquareNeo-Variable';
+    font-weight: 900;
+    color: #048470;
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+.kids{
+   font-family: 'NanumSquareNeo-Variable';
+    font-weight: 900;
+    color: #fe840e;
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+#guide{
+    width: 1320px;
+    margin: 100px auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center
+}
+.welcome{ 
+padding: 150px 0 150px 50px;}
+
+.welcome h3{
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 71px;
+    color: #e06161;
+    padding-bottom: 25px;
+}
+.welcome p{
+    font-family: 'NanumSquareNeo-Variable';
+    color:#7c7c7c;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+}
+.button{
+    display: inline-block;
+    border: #e06161 1px solid;
+    padding: 20px 40px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    color: #e06161;
+    margin-top: 25px;
+}
+.button:hover{
+    background-color: #ff8282;
+    color: white;
+    border: 1px solid #e06161;
+}
+/* 프로그램 */
+#program{
+    width: 100%;
+    margin: auto;
+}
+.program_box{
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+.program_box li{
+    width: 962px;
+    height: 336px;
+}
+/* 초진안내 */
+#first{
+    width: 1320px;
+    margin: 150px auto;
+}
+h4{
+      font-family: 'NanumSquareNeo-Variable';
+    color: #00625c;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#first .text1{
+      font-family: 'NanumSquareNeo-Variable';
+    color: #898989;
+    font-size: 24px;
+    text-align: center;
+}
+
+.procedure{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;  
+    justify-content: center;
+align-items: center;
+    margin: 80px 0;
+}
+.procedure li{
+    width: 350px;
+    padding: 0 110px;
+}
+
+h5{
+      font-family: 'NanumSquareNeo-Variable';
+    color: #00625c;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+.procedure li p{
+    color: #898989;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+}
+/* 드라마 명대사 */
+#drama{
+    width:100%;
+    height: 445px;
+    background: url(../images/under_bg.jpg) no-repeat center center; 
+ 
+}
+.drama{
+    width: 1320px;
+ margin: auto;  
+padding: 20px 0; 
+box-sizing: border-box;
+}
+.box2{
+    margin: 30px auto;
+    width: 979px;
+    height: 345px;
+    background-color: rgb(255, 255, 255,0.5);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+h6{
+     font-family: 'NanumSquareNeo-Variable';
+     font-size: 24px;
+     font-weight: 500;
+     text-align: center;
+     line-height: 47px;
+     padding-bottom: 20px;
+}
+.box2 p{
+    color: #68036e;
+     font-family: 'NanumSquareNeo-Variable';
+     font-size: 30px;
+     font-weight: 400;
+     text-align: center;
+     line-height: 51px;
+} 
+/* 푸터 */
+footer{
+    background-color: #85cdcf;
+
+}
+.footer_inner{
+    width: 1320px;
+    margin: auto;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.footer_logo{display: block;
+margin-top: 120px;}
+
+.box3{
+    width: 600px;
+    height: 300px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.box3 ul li{
+    color: white;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.box3 ul:nth-child(1),.box3 ul:nth-child(3) {
+  margin-right: 50px;
+}
+.box3 ul:nth-child(1){
+    margin-bottom: 20px;
+}
