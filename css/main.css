@@ -315,13 +315,15 @@ h4{
     display: -moz-box;
     display: -ms-flexbox;
     display: flex;  
-    justify-content: center;
+    justify-content: space-around;
 align-items: center;
     margin: 80px 0;
 }
 .procedure li{
     width: 350px;
-    padding: 0 110px;
+}
+.procedure li img{
+    margin: auto;
 }
 
 h5{
